@@ -1,8 +1,26 @@
 aid: cord
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cord.png
 name: Cord *
-description: 'Cord * is a company surfaced as a portfolio company of gv, index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Cord * (Cord Project Inc.) was a consumer communication startup building
+  simple, fast voice messaging that let people send short audio clips to one friend
+  or broadcast to a whole group, delivered through iOS and Android mobile apps. Backed
+  by GV and Index Ventures, the New York based team was acquired by Spotify in 2015,
+  where the product formed the foundation of a group exploring new ways people interact
+  with audio; the standalone apps and service were subsequently wound down. The company
+  never published a public developer platform, API, SDK, or documentation surface,
+  so this API Evangelist profile is retained as a historical portfolio-lead record
+  with no active API artifacts to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/cord/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,19 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: spotify
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Messaging
+- Voice
+- Audio
+- Communication
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cord-domain-security.yml
 - type: Website
   url: http://www.cordproject.co/
+- type: Blog
+  url: http://blog.cord.im
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
